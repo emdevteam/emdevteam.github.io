@@ -1,0 +1,26 @@
+.comets
+  // border: 1px solid #eee
+  // position: relative
+  width: 150vw
+  height: 150vh
+  transform-origin: center
+  transform:  translate3D(-25vw, -25vh, 1px) rotate(180deg) scale(0.75)
+
+.comet
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 1px
+  height: 95vh
+  background: linear-gradient(#b1d515, transparent)
+  animation: comet 3s ease-in-out forwards
+
+@keyframes comet
+  0%
+    opacity: 0
+    transform: translateY(200%) scaleY(0)
+  50%
+    opacity: 1
+  100%
+    opacity: 0
+    transform: translateY(0) scaleY(1)
